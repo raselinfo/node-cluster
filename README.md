@@ -70,3 +70,36 @@ The high-speed **interprocess communication** (IPC) interconnect is a high-bandw
   - -n : number of request per virtual user.
 - The commend will be
   - artillery quick --count 10 -n 20 http://localhost:4000?number=20
+
+## PM2
+
+### What is PM2
+
+PM2 is a production process manager for Node. js applications with a built-in load balancer.PM2 enables you to keep applications alive forever, reloads them without downtime, helps you to manage application logging, monitoring, and clustering.
+
+- PM2 is a production process manager for nodejs applications with build in load-balancer
+- PM2 allows to
+  - keep application alive forever
+  - Reload them without downtime
+  - Facilitate common system admin task link
+    - monitoring, stopping, deleting processes etc
+
+#### PM2 working
+
+- PM2 make usage of nodejs cluster module
+- The scaled application's child processes can automatically share server ports
+- You can start nodejs application using PM2 by using
+  - commend line option
+  - process configuration file [js/yaml/json file]
+
+#### Creating Process file
+
+- You can create a process file to
+  - Fine-tune the behavior
+  - Options
+  - Environment Variables
+  - Log files of each applications
+- To create a process file use commend
+  - pm2 ecosystem
+- After creating a process file , use command
+  - pm2 [start|reset|stop|delete] ecosystem.config.js
