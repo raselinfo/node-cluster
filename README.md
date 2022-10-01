@@ -104,6 +104,28 @@ PM2 is a production process manager for Node. js applications with a built-in lo
 - After creating a process file , use command
   - pm2 [start|reset|stop|delete] ecosystem.config.js
 
+```js
+module.exports = {
+  apps: [
+    {
+      name: "Express App",
+      script: "index.js",
+      instances: "MAX",
+      autorestart: true,
+      watch: true,
+      max_memory_restart: "1G",
+      exec_mode: "cluster",
+      env: {
+        NODE_ENV: "development",
+      },
+      env_production: {
+        NODE_ENV: "production",
+      },
+    },
+  ],
+};
+```
+
 #### PM2 Commands
 
 - PM2 start command
