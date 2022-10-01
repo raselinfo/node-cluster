@@ -103,3 +103,16 @@ PM2 is a production process manager for Node. js applications with a built-in lo
   - pm2 ecosystem
 - After creating a process file , use command
   - pm2 [start|reset|stop|delete] ecosystem.config.js
+
+#### PM2 Commands
+
+- PM2 start command
+  - pm2 start ecosystem.config.js
+- To monitor the process
+  - pm2 monit
+- To stop any/all process
+  - pm2 stop all/app-name
+- To delete any/all process
+  - pm2 delete all/app-name
+- To list all applications
+  - pm2 list
