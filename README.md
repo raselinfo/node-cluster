@@ -58,3 +58,15 @@ The high-speed **interprocess communication** (IPC) interconnect is a high-bandw
     - Returns an array of objects containing information about each logical CPU core
   - os.cpus().length
     - Return the count of logical CPUs
+
+## NodeJs Cluster Load Test
+
+- **To load test Nodejs cluster , install 'loadtest' packege using npm install commend**
+- The commend will be:
+  - loadtest -n 100 -c 100 --rps 200 http://localhost:4000?number=10
+- **Artillery: While using artillery, we can use number of parameters like**
+  - quick : used for add-hoc testing
+  - --count : used for creating virtual users
+  - -n : number of request per virtual user.
+- The commend will be
+  - artillery quick --count 10 -n 20 http://localhost:4000?number=20
