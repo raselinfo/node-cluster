@@ -50,3 +50,11 @@ The high-speed **interprocess communication** (IPC) interconnect is a high-bandw
   - Disconnect, IsConnected, IsDead, Kill, Send etc.
 - **Properties**
   - Id, Process etc.
+
+### How to get CPU count?
+
+- To know how many logical CPU are available in our machine, we can make use of **OS module**
+  - os.cpus()
+    - Returns an array of objects containing information about each logical CPU core
+  - os.cpus().length
+    - Return the count of logical CPUs
