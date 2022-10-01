@@ -14,4 +14,4 @@ Blocking refers to operations that block further execution until that operation 
 - Cluster module allows to take advantage of multi-core system
 - It help to create child process which shares server ports
 
-<img src="./images/node-cluster.png">
+<img src="./images/Screenshot_1.png">
