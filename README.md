@@ -22,6 +22,13 @@ Blocking refers to operations that block further execution until that operation 
 - These processes can communicate with parent via **IPC**
 - They can also communicate from parent to child and child to parent.
 - The cluster module supports two methods for distributing incoming connections
+  - **Round Robin**
+    - This is default on all platforms except windows.
+    - The master process listen on a PORT, accepts a new connection and distribute them across the workers in a round-robin fashion
+  - Second Method
+    - The master process create the listen socket and sends it to interested workers
+    - The workers then accept incoming connections directly
 
 ### What is IPC
-The high-speed interprocess communication (IPC) interconnect is a high-bandwidth, low latency communication facility that links the nodes in the cluster. The interconnect routes messages and other cluster communications traffic to coordinate each node's access to resources.
+
+The high-speed **interprocess communication** (IPC) interconnect is a high-bandwidth, low latency communication facility that links the nodes in the cluster. The interconnect routes messages and other cluster communications traffic to coordinate each node's access to resources.
