@@ -1,4 +1,4 @@
-# NodeJS Cluster
+# NodeJS Cluster 🔥
 
 ## What is NodeJS Cluster?
 
