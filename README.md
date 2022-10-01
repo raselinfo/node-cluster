@@ -32,3 +32,11 @@ Blocking refers to operations that block further execution until that operation 
 ### What is IPC
 
 The high-speed **interprocess communication** (IPC) interconnect is a high-bandwidth, low latency communication facility that links the nodes in the cluster. The interconnect routes messages and other cluster communications traffic to coordinate each node's access to resources.
+
+### Cluster Methods, Properties and Events
+- **There are several events which can handle during NodeJS clustering**
+  - Online, Fork, Message, Disconnect, Exit etc
+- **Methods**
+  - Disconnect, Fork etc
+- **Properties**
+  - isMaster, IsWorker etc
