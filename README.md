@@ -15,3 +15,13 @@ Blocking refers to operations that block further execution until that operation 
 - It help to create child process which shares server ports
 
 <img src="./images/Screenshot_1.png">
+
+## Working of Cluster
+
+- Worker processes are spawned using the fork() method
+- These processes can communicate with parent via **IPC**
+- They can also communicate from parent to child and child to parent.
+- The cluster module supports two methods for distributing incoming connections
+
+### What is IPC
+The high-speed interprocess communication (IPC) interconnect is a high-bandwidth, low latency communication facility that links the nodes in the cluster. The interconnect routes messages and other cluster communications traffic to coordinate each node's access to resources.
