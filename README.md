@@ -154,3 +154,5 @@ module.exports = {
   - **Because of additional resource allocation, spawning large number of Node JS processes is not recommended**
 
 <img src="http://davidvgalbraith.com/wp-content/uploads/2016/01/Screen-Shot-2016-01-03-at-4.56.07-PM-1024x543.png"/>
+<img src="https://miro.medium.com/max/1400/1*XjARU57S6Fzcz2Ae04oz3w.png"/>
+<img src="https://vietcanho.files.wordpress.com/2016/05/cp_methods1.png?w=784&h=737"/>
