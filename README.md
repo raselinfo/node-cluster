@@ -138,3 +138,19 @@ module.exports = {
   - pm2 delete all/app-name
 - To list all applications
   - pm2 list
+
+## Child Process
+
+### child_process.fork() method
+
+- The fork() method return an instance of ChildProcess object
+  - It implements the nodejs eventEmitter API which allows parent process to register listener functions
+- When certain events occurs in the lifecycle of child process, these listener function will get executed
+
+- The childProcess Object has build-in communication channel which is IPC [Inter process communication channel]
+- Using this channel , message ca be send back and forth between parent and child
+- Each process has it's own memory with their own V\* engine
+- Note
+  - **Because of additional resource allocation, spawning large number of Node JS processes is not recommended**
+
+<img src="http://davidvgalbraith.com/wp-content/uploads/2016/01/Screen-Shot-2016-01-03-at-4.56.07-PM-1024x543.png"/>
